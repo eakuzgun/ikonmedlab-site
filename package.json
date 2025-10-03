@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npm run build && touch out/.nojekyll && git add out && git commit -m 'Deploy' && git subtree push --prefix out origin gh-pages"
+    "netlify": "netlify dev"
   },
   "dependencies": {
     "@supabase/ssr": "^0.5.2",
@@ -19,6 +19,7 @@
     "sharp": "^0.33.5"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.13.4",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
