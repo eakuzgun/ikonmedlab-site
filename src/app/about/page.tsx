@@ -111,7 +111,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="cta-section">
+      {/* <section className="cta-section">
         <div className="container">
           <div className="cta-content">
             <h2>İşbirliği Yapmak İster Misiniz?</h2>
@@ -119,7 +119,7 @@ export default function AboutPage() {
             <a href="/contact" className="btn btn-primary">İletişime Geçin</a>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   )
 }
