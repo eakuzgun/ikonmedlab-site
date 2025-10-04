@@ -19,6 +19,12 @@ export default function Header() {
       .catch(err => console.error('Subcategories fetch error:', err))
   }, [])
 
+  // Kapat: rota değiştiğinde mobil menüyü kapat
+  useEffect(() => {
+    // Eğer mobil menü açıksa ve pathname değiştiyse kapat
+    if (mobileMenuOpen) setMobileMenuOpen(false)
+  }, [pathname])
+
   const isActive = (path: string) => {
     if (path === '/') return pathname === '/'
     return pathname?.startsWith(path)
